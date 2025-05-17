@@ -10,5 +10,5 @@ public protocol QuestionSpec {
 
 	associatedtype QuestionFetchFields: QuestionFields
 
-	func fetchQuestions(of type: String?, in category: Int?, count: Int?) async -> QuestionFetch
+	func fetchQuestions(of type: Question.QuestionType?, in category: Int?, with difficulty: Question.Difficulty?, count: Int?) async -> QuestionFetch
 }
