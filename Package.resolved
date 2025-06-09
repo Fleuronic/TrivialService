@@ -1,5 +1,5 @@
 {
-  "originHash" : "b8b2a5739c97a93eb1c01a0800bfa4d621c76cfa197be0fcdab2e8ae8a945a89",
+  "originHash" : "19b774f62a4d3d178fec10af066a93699905158fc33f3f3cbb0830b7ffd9dc1a",
   "pins" : [
     {
       "identity" : "catena",
@@ -20,6 +20,15 @@
       }
     },
     {
+      "identity" : "schemata",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jordanekay/Schemata",
+      "state" : {
+        "branch" : "master",
+        "revision" : "b8722d45a75a755f17907ba6d3765c23e5e46a7a"
+      }
+    },
+    {
       "identity" : "swift-memberwise-init-macro",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/gohanlon/swift-memberwise-init-macro",
@@ -35,6 +44,15 @@
       "state" : {
         "revision" : "0687f71944021d616d34d922343dcef086855920",
         "version" : "600.0.1"
+      }
+    },
+    {
+      "identity" : "trivial",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Fleuronic/Trivial",
+      "state" : {
+        "branch" : "main",
+        "revision" : "14a946f0381e226d3132c771c7d690724ff44a13"
       }
     }
   ],
