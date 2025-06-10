@@ -7,16 +7,16 @@
       "location" : "https://github.com/Fleuronic/Catena",
       "state" : {
         "branch" : "main",
-        "revision" : "d34d1fbc9e174317cbbde7dd07e87c134a5dc065"
+        "revision" : "53198be3fe65eee910bca486054f55dd851c52c2"
       }
     },
     {
       "identity" : "identity",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Fleuronic/Identity",
+      "location" : "https://github.com/jordanekay/Identity",
       "state" : {
         "branch" : "master",
-        "revision" : "3c92c38d7a5f2134beaefa25c278ddda5d3fcf7a"
+        "revision" : "8764a54c8e5ef0d14f3dc2ec5c10223ed0411a4d"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/Fleuronic/Trivial",
       "state" : {
         "branch" : "main",
-        "revision" : "14a946f0381e226d3132c771c7d690724ff44a13"
+        "revision" : "84f565084c27e5de4b965d9097bdfc8a34814a26"
       }
     }
   ],
