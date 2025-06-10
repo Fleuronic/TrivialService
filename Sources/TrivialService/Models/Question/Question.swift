@@ -5,8 +5,8 @@ import Schemata
 import struct Trivial.Question
 import struct Trivial.Category
 import struct Trivial.Answer
-import struct Catena.IDFields
 import struct Foundation.UUID
+import struct Catena.IDFields
 import protocol Catena.Valued
 
 public extension Question {
