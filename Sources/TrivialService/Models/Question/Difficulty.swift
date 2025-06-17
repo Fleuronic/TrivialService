@@ -24,7 +24,8 @@ public extension Question.Difficulty {
 }
 
 // MARK: -
-extension Question.Difficulty: Schemata.ModelValue {
+extension Question.Difficulty: ModelValue {
+	// MARK: ModelValue
 	public static var value: Value<String, Self> {
 		String.value.bimap(
 			decode: decoded,

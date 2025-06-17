@@ -32,7 +32,7 @@ extension Answer.Identified: Valued {
 	public typealias Value = Answer
 }
 
-extension Answer.Identified: Schemata.Model {
+extension Answer.Identified: Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
 		case text

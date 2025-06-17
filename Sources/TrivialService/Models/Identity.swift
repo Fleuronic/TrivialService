@@ -4,7 +4,7 @@ import Schemata
 import struct Identity.Identifier
 import protocol Catena.StringEncodable
 
-extension Identifier: Schemata.AnyModelValue where Value.RawIdentifier: ModelValue & StringEncodable {
+extension Identifier: AnyModelValue where Value.RawIdentifier: ModelValue & StringEncodable {
 	public static var anyValue: AnyValue {
 		.init(
 			String.value.bimap(
@@ -16,7 +16,7 @@ extension Identifier: Schemata.AnyModelValue where Value.RawIdentifier: ModelVal
 }
 
 // MARK: -
-extension Identifier: Schemata.ModelValue where Value.RawIdentifier: ModelValue & StringEncodable {
+extension Identifier: ModelValue where Value.RawIdentifier: ModelValue & StringEncodable {
 	public static var value: Schemata.Value<Value.RawIdentifier.Encoded, Self> {
 		Value.RawIdentifier.value.bimap(
 			decode: Self.init,

@@ -32,7 +32,7 @@ extension Category.Identified: Valued {
 	public typealias Value = Category
 }
 
-extension Category.Identified: Schemata.Model {
+extension Category.Identified: Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
 		case name

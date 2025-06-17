@@ -34,10 +34,10 @@ extension Question.Identified: Valued {
 	public typealias Value = Question
 }
 
-extension Question.Identified: Schemata.Model {
+extension Question.Identified: Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
-		case question // TODO
+		case question
 		case prompt
 		case questionType = "type"
 		case difficulty

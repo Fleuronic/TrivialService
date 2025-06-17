@@ -22,7 +22,8 @@ public extension Question.QuestionType {
 }
 
 // MARK: -
-extension Question.QuestionType: Schemata.ModelValue {
+extension Question.QuestionType: ModelValue {
+	// MARK: ModelValue
 	public static var value: Value<String, Self> {
 		String.value.bimap(
 			decode: decoded,
