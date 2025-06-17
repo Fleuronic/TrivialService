@@ -15,20 +15,10 @@ public extension Category {
 }
 
 // MARK: -
-public final class IdentifiedCategory: Sendable {
+public struct IdentifiedCategory: Sendable {
 	public let id: Category.ID
+	public let parentID: Category.ID!
 	public let value: Category
-	public let parent: Category.Identified!
-
-	private init(
-		id: Category.ID,
-		value: Category,
-		parent: Category.Identified?
-	) {
-		self.id = id
-		self.value = value
-		self.parent = parent
-	}
 }
 
 // MARK: -
@@ -46,14 +36,14 @@ extension Category.Identified: Schemata.Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
 		case name
-		case parent
+		case parentID = "parent_id"
 	}
 
 	public static let schema = Schema(
-		Category.Identified.init,
+		Self.init,
 		\.id * .id,
-		\.value.name * .name,
-		\.parent -?> .parent
+		\.parentID * .parentID,
+		\.value.name * .name
 	)
 
 	public static let schemaName = "categories"
@@ -61,15 +51,15 @@ extension Category.Identified: Schemata.Model {
 
 // MARK: -
 private extension Category.Identified {
-	convenience init(
+	init(
 		id: Category.ID,
-		name: String,
-		parent: Category.Identified?
+		parentID: Category.ID?,
+		name: String
 	) {
 		self.init(
 			id: id,
-			value: .init(name: name),
-			parent: parent
+			parentID: parentID,
+			value: .init(name: name)
 		)
 	}
 }
