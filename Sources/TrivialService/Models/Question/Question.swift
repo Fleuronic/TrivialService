@@ -2,6 +2,8 @@
 
 import Identity
 import Schemata
+import PersistDB
+import Catenoid
 import struct Trivial.Question
 import struct Trivial.Category
 import struct Trivial.Answer
@@ -24,6 +26,33 @@ public struct IdentifiedQuestion: Sendable {
 }
 
 // MARK: -
+extension Question.Identified {
+	static func predicate(
+		type: Question.QuestionType?,
+		categoryID: Category.ID?,
+		difficulty: Question.Difficulty?
+	) -> Predicate<Self>? {
+		var predicate: Predicate<Self>?
+
+		if let type {
+			predicate = \.value.questionType == type
+		}
+
+		if let categoryID {
+			let subpredicate: Predicate<Self> = \.category.id == categoryID
+			predicate = predicate.map { $0 && subpredicate } ?? subpredicate
+		}
+
+		if let difficulty {
+			let subpredicate: Predicate<Self> = \.value.difficulty == difficulty
+			predicate = predicate.map { $0 && subpredicate } ?? subpredicate
+		}
+
+		return predicate
+	}
+}
+
+// MARK: -
 extension Question.Identified: Identifiable {
 	// MARK: Identifiable
 	public typealias RawIdentifier = UUID
@@ -34,11 +63,11 @@ extension Question.Identified: Valued {
 	public typealias Value = Question
 }
 
-extension Question.Identified: Model {
+extension Question.Identified: PersistDB.Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
-		case question
 		case prompt
+		case question
 		case questionType = "type"
 		case difficulty
 		case answers
@@ -56,6 +85,11 @@ extension Question.Identified: Model {
 	)
 
 	public static let schemaName = "questions"
+
+	// MARK: Model
+	public static var defaultOrder: [Ordering<Self>] {
+		[.init(\.value.prompt, ascending: true)]
+	}
 }
 
 // MARK: -

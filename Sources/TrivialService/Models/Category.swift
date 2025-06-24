@@ -2,6 +2,8 @@
 
 import Identity
 import Schemata
+import Catenoid
+import PersistDB
 import struct Trivial.Category
 import struct Trivial.Answer
 import struct Foundation.UUID
@@ -32,7 +34,7 @@ extension Category.Identified: Valued {
 	public typealias Value = Category
 }
 
-extension Category.Identified: Model {
+extension Category.Identified: PersistDB.Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
 		case name
@@ -47,6 +49,11 @@ extension Category.Identified: Model {
 	)
 
 	public static let schemaName = "categories"
+
+	// MARK: Model
+	public static var defaultOrder: [Ordering<Self>] {
+		[.init(\.value.name, ascending: true)]
+	}
 }
 
 // MARK: -

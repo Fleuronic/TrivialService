@@ -2,6 +2,8 @@
 
 import Identity
 import Schemata
+import PersistDB
+import Catenoid
 import struct Trivial.Answer
 import struct Trivial.Question
 import struct Foundation.UUID
@@ -32,7 +34,7 @@ extension Answer.Identified: Valued {
 	public typealias Value = Answer
 }
 
-extension Answer.Identified: Model {
+extension Answer.Identified: PersistDB.Model {
 	// MARK: Model
 	public enum Path: String, CodingKey {
 		case text
@@ -49,6 +51,11 @@ extension Answer.Identified: Model {
 	)
 
 	public static let schemaName = "answers"
+
+	// MARK: Model
+	public static var defaultOrder: [Ordering<Self>] {
+		[.init(\.value.text, ascending: true)]
+	}
 }
 
 // MARK: -
