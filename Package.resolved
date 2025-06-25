@@ -1,5 +1,5 @@
 {
-  "originHash" : "19b774f62a4d3d178fec10af066a93699905158fc33f3f3cbb0830b7ffd9dc1a",
+  "originHash" : "e9aa1ada82ac6b8531a3247d93d2564a7a38bb90c34c9d1ad8db7c36c6f21ff6",
   "pins" : [
     {
       "identity" : "catena",
@@ -7,7 +7,25 @@
       "location" : "https://github.com/Fleuronic/Catena",
       "state" : {
         "branch" : "main",
-        "revision" : "53198be3fe65eee910bca486054f55dd851c52c2"
+        "revision" : "681be25be987a63d858c6c952d239ed85a5c1b43"
+      }
+    },
+    {
+      "identity" : "catenoid",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Fleuronic/Catenoid",
+      "state" : {
+        "branch" : "main",
+        "revision" : "81a13203a8e6f1bb7228ea31bf32726ed5a999e1"
+      }
+    },
+    {
+      "identity" : "differ",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tonyarnold/Differ",
+      "state" : {
+        "revision" : "5520fda947f1f9777a806389c2ba587219bc0538",
+        "version" : "1.4.6"
       }
     },
     {
@@ -20,12 +38,30 @@
       }
     },
     {
+      "identity" : "persistdb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jordanekay/PersistDB",
+      "state" : {
+        "branch" : "master",
+        "revision" : "be5355f60f2229f0fd823f320916ce1f64de49fa"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "branch" : "swift-concurrency",
+        "revision" : "3d40187c982346352d0adbe6b38e0e3d53fddc95"
+      }
+    },
+    {
       "identity" : "schemata",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jordanekay/Schemata",
       "state" : {
         "branch" : "master",
-        "revision" : "b8722d45a75a755f17907ba6d3765c23e5e46a7a"
+        "revision" : "1c5443b01cd2fb9f25e63197cfe35b96ba9bd2fc"
       }
     },
     {
@@ -52,7 +88,7 @@
       "location" : "https://github.com/Fleuronic/Trivial",
       "state" : {
         "branch" : "main",
-        "revision" : "84f565084c27e5de4b965d9097bdfc8a34814a26"
+        "revision" : "a3d8206ccbdb641f745d348446b442be8631617e"
       }
     }
   ],
