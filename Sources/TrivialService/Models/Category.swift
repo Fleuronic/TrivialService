@@ -2,8 +2,8 @@
 
 import Identity
 import Schemata
-import Catenoid
 import PersistDB
+import Catenoid
 import struct Trivial.Category
 import struct Trivial.Answer
 import struct Foundation.UUID

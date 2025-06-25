@@ -1,9 +1,4 @@
-//
-//  File.swift
-//  TrivialService
-//
-//  Created by Jordan Kay on 5/25/25.
-//
+// Copyright © Fleuronic LLC. All rights reserved.
 
 import Schemata
 import struct Trivial.Answer

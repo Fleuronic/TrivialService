@@ -1,6 +1,5 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
-import Catenary
 import struct Trivial.Question
 import struct Trivial.Answer
 import struct Trivial.Category
@@ -14,7 +13,7 @@ extension IDFields: TrivialService.CategoryFields where Model == Category.Identi
 extension IDFields: Swift.Decodable where Model.ID: Decodable {
 	public init(from decoder: any Decoder) throws {
 		let container = try decoder.container(keyedBy: CodingKeys.self)
-		try self.init(id: container.decode(for: .id))
+		try self.init(id: container.decode(Model.ID.self, forKey: .id))
 	}
 }
 
