@@ -17,7 +17,6 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/Fleuronic/Trivial", branch: "main"),
-		.package(url: "https://github.com/Fleuronic/Catenoid", branch: "main"),
 		.package(url: "https://github.com/Fleuronic/Caesura", branch: "main")
 	],
 	targets: [
@@ -25,7 +24,6 @@ let package = Package(
 			name: "TrivialService",
 			dependencies: [
 				"Trivial",
-				"Catenoid",
 				"Caesura"
 			]
 		)
