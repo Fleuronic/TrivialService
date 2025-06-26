@@ -1,9 +1,9 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
-import Identity
 import Schemata
 import PersistDB
 import Catenoid
+import Identity
 import struct Trivial.Question
 import struct Trivial.Category
 import struct Trivial.Answer
