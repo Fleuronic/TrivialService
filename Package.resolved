@@ -1,6 +1,15 @@
 {
-  "originHash" : "e9aa1ada82ac6b8531a3247d93d2564a7a38bb90c34c9d1ad8db7c36c6f21ff6",
+  "originHash" : "f49d07837d4a966514186352653f9d8612a61acfd6d750daa8626e4658223f20",
   "pins" : [
+    {
+      "identity" : "caesura",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Fleuronic/Caesura",
+      "state" : {
+        "branch" : "main",
+        "revision" : "02cd6ba59418d52da80cad15319412c16f2c281b"
+      }
+    },
     {
       "identity" : "catena",
       "kind" : "remoteSourceControl",
@@ -8,6 +17,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "681be25be987a63d858c6c952d239ed85a5c1b43"
+      }
+    },
+    {
+      "identity" : "catenary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Fleuronic/Catenary",
+      "state" : {
+        "branch" : "main",
+        "revision" : "224c53aee87e9e5ea444d0ed8844fbeed00ed5cc"
       }
     },
     {
@@ -38,6 +56,15 @@
       }
     },
     {
+      "identity" : "papyrus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jordanekay/papyrus",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ff604d6cca47a31a3e27588f6c5c155664175cb2"
+      }
+    },
+    {
       "identity" : "persistdb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jordanekay/PersistDB",
@@ -62,6 +89,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "1c5443b01cd2fb9f25e63197cfe35b96ba9bd2fc"
+      }
+    },
+    {
+      "identity" : "sociableweaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NicholasBellucci/SociableWeaver.git",
+      "state" : {
+        "revision" : "dd8368fcf1f8fef5d672ea64775dc6f7b02d7a92",
+        "version" : "0.1.12"
       }
     },
     {
