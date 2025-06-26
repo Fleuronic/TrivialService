@@ -3,8 +3,8 @@
 import struct Trivial.Category
 import protocol Catena.Scoped
 import protocol Catena.ResultProviding
-import protocol Catenoid.Storage
 import protocol Catenoid.Fields
+import protocol Caesura.Storage
 
 public protocol CategorySpec {
 	associatedtype CategoryList: Scoped<CategoryListFields>

@@ -4,8 +4,8 @@ import struct Trivial.Question
 import struct Trivial.Category
 import protocol Catena.Scoped
 import protocol Catena.ResultProviding
-import protocol Catenoid.Storage
 import protocol Catenoid.Fields
+import protocol Caesura.Storage
 
 public protocol QuestionSpec {
 	associatedtype QuestionFetch: Scoped<QuestionFetchFields>
