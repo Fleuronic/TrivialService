@@ -1,5 +1,5 @@
 {
-  "originHash" : "f49d07837d4a966514186352653f9d8612a61acfd6d750daa8626e4658223f20",
+  "originHash" : "40ca71bdc73abdfa6d7efab941e7eaac7511c62c7ea119e32eb95576a8100d70",
   "pins" : [
     {
       "identity" : "caesura",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/Fleuronic/Caesura",
       "state" : {
         "branch" : "main",
-        "revision" : "02cd6ba59418d52da80cad15319412c16f2c281b"
+        "revision" : "d1fb2c4160ceed06250c10de34f96d2aa4032c3d"
       }
     },
     {
@@ -16,7 +16,7 @@
       "location" : "https://github.com/Fleuronic/Catena",
       "state" : {
         "branch" : "main",
-        "revision" : "681be25be987a63d858c6c952d239ed85a5c1b43"
+        "revision" : "e42054d1cffd0f3c7bc4e64898099ce6534a8bc6"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/Fleuronic/Catenoid",
       "state" : {
         "branch" : "main",
-        "revision" : "81a13203a8e6f1bb7228ea31bf32726ed5a999e1"
+        "revision" : "52333639ae306dab59c072c0c1c4a31d6eb6e418"
       }
     },
     {
@@ -52,7 +52,7 @@
       "location" : "https://github.com/jordanekay/Identity",
       "state" : {
         "branch" : "master",
-        "revision" : "8764a54c8e5ef0d14f3dc2ec5c10223ed0411a4d"
+        "revision" : "ff9dfdf4df87ff0d7064d40bdc230c5e55f0bcbf"
       }
     },
     {
@@ -70,7 +70,7 @@
       "location" : "https://github.com/jordanekay/PersistDB",
       "state" : {
         "branch" : "master",
-        "revision" : "be5355f60f2229f0fd823f320916ce1f64de49fa"
+        "revision" : "1fcce3a2e8d5ff8dcd52ab60a743bc0fb9f06c78"
       }
     },
     {
