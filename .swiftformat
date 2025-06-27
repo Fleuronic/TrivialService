@@ -1,4 +1,6 @@
 --disable all
+--swiftversion 6
+--languagemode 6
 
 --enable indent
 --enable isEmpty
