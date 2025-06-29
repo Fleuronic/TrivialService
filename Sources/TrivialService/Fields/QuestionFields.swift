@@ -1,9 +1,10 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
 import struct Trivial.Question
+import struct Catena.IDFields
 import protocol Catena.Fields
-import protocol Catena.Valued
 
-public protocol QuestionFields: Fields {
-	associatedtype Model: Valued<Question> = Question.Identified
-}
+public protocol QuestionFields: Fields where Model == Question.Identified {}
+
+// MARK: -
+extension IDFields: QuestionFields where Model == Question.Identified {}
